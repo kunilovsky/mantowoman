@@ -1,0 +1,49 @@
+header
+    height: 80px
+    width: 100%
+    position: sticky
+    top: 0
+    background: $white
+.logo
+    text-decoration: none
+    font-weight: bold
+    font-size: 20px
+.nav
+    max-width: 1140px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    &__menu
+        display: flex
+        list-style: none
+        &__item
+            & a
+                text-decoration: none
+                padding: 0 15px
+/* Mobile Resp */
+.btn-mobile
+    display: none
+@media (max-width: 992px)
+    .btn-mobile
+        display: inline-flex
+        content: ''
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 12h.009m3.995 0h.01m3.977 0H16'/%3E%3Cpath stroke-width='1.5' d='M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z'/%3E%3C/g%3E%3C/svg%3E");
+        width: 40px
+        height: 40px
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center
+    .nav__menu
+        display: none
+    .nav__menu__active
+        display: block
+        position: absolute
+        top: 80px
+        left: 0
+        right: 0
+        bottom: auto
+        background: $white
