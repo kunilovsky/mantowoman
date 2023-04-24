@@ -1,14 +1,21 @@
 /* Main Colors */
 body {
   position: relative;
+  font-family: 'Inter', sans-serif;
 }
 
-.btn-sticky {
-  position: absolute;
+.btn__bottom {
+  width: 100%;
+  text-align: end;
+  position: fixed;
   bottom: 0;
+  left: 0;
   right: 0;
-  left: auto;
-  top: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 header {
@@ -41,6 +48,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .nav__menu {
@@ -85,5 +94,44 @@ header {
     bottom: auto;
     background: #ffffff;
   }
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.start {
+  height: calc( 100vh - 80px);
+}
+
+.start__book {
+  height: 600px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.start__info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.start__info a {
+  background: #000000;
+  border-radius: 100px;
+  color: #ffffff;
+  padding: 5px 15px;
 }
 /*# sourceMappingURL=style.css.map */
